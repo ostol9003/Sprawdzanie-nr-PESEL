@@ -37,7 +37,7 @@ string sprpesel(long pesel,int i)
     string napis = to_string(pesel);
     int ile = napis.length();
     if (ile!=11)
-    osoby[i].x="Wprowadzony PESEL jest za krotki!";
+    osoby[i].x="Wprowadzony PESEL jest za krotki lub za dlugi!";
     
     else
     {
@@ -74,7 +74,7 @@ int main()
     int l;
     char odp;
     l=0;
-    cout<<"Witam! Program pobiera i sprawdza:\n- poprawnosc wprowadzonego numeru PESEL\n- plec na jego podstawie"<<endl;
+    cout<<"Witam! Program pobiera i sprawdza:\n- poprawnosc wprowadzonego numeru PESEL\n- plec na jego podstawie"<<endl<<endl;
     
     
     //Wczytanie danych
@@ -98,13 +98,13 @@ int main()
     
     //Wyswietlenie informacji
     
-            cout<<"Liczba wprowadzonych osob - "<<l<<endl;
+            cout<<"Liczba wprowadzonych osob - "<<l<<endl<<endl;
             for (int i=0;i<l;i++)
             {
-            cout<<"Imie : "<<osoby[i].imie<<endl;
-            cout<<"Nazwisko : "<<osoby[i].nazwisko<<endl;
-            cout<<osoby[i].x<<endl;
-            cout<<"Plec: "<<osoby[i].plec<<endl<<endl<<endl;
+            cout<<"Imie : "<<osoby[i].imie<<endl<<endl;
+            cout<<"Nazwisko : "<<osoby[i].nazwisko<<endl<<endl;
+            cout<<osoby[i].x<<endl<<endl;
+            cout<<"Plec: "<<osoby[i].plec<<endl<<endl<<endl<<endl;
             }
         
 }
